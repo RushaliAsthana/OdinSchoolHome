@@ -12,6 +12,7 @@
  crossorigin="anonymous"
  ></script>
  <script src="scripts.js"></script>
+ <link rel="stylesheet" href="mystyle.css">
 </head>
 <body class="text-gray-700">
   <nav class="flex sticky top-0 z-10 items-center bg-white p-3 flex-wrap blog-nav shadow">
@@ -111,12 +112,16 @@
       <div
       class="lg:inline-flex  lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start flex flex-col lg:h-auto"
     >
-    <a
-    href="#"
-    class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded  items-center justify-center  hover:text-orange-500 bg-white mr-3"
-  >
-  <span> Programs</span>
-  </a>
+    
+  <div class="m-0">
+    <button class="px-4 py-2  rounded flex hover:text-orange-500 active:orange-theme-font" id="menu-btn">Programs   <svg class="fill-current h-4 w-4 mt-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg></button>
+    
+    <div class="bg-white shadow hidden flex-col lg:absolute rounded-xl mt-1 p-5 text-sm w-34" id="dropdown">
+        <a href="#" class="px-2 py-1 hover:bg-gray-100 hover:text-orange-500 rounded">Data Science</a>
+        <a href="#" class="px-2 py-1 hover:bg-gray-100 hover:text-orange-500 rounded">Full Stack Web Development</a>
+        
+    </div>
+</div>
     <a
           href="#"
           class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded  items-center justify-center  hover:text-orange-500 bg-white mr-3"
