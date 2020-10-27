@@ -107,7 +107,31 @@
     
      .drop-btn:hover #dropdown {display: block;}
       </style>
-    
+          <script>
+        $(document).ready(function () {
+          $(".nav-toggler").each(function (_, navToggler) {
+            var target = $(navToggler).data("target");
+            $(navToggler).on("click", function () {
+              $(target).animate({
+                height: "toggle",
+              });
+            });
+          });
+         });
+      
+      
+         var app = new Vue({
+          el: '#app',
+          data: {
+            modal: false
+          },
+          methods: {
+            toggleModal() {
+              this.modal = !this.modal
+            }
+          }
+        })
+      </script>
     
       <!--0th section-->
       <nav class="flex sticky top-0 z-10 items-center bg-white p-3 flex-wrap blog-nav shadow">
