@@ -7,7 +7,7 @@ body
 .orange-theme-bg{
   background-color:orangered;
 }
-.orange-theme-bg:hover
+.orange-theme-bg-hover:hover
 {
   background-color:rgb(231, 64, 3);
 }
@@ -15,6 +15,9 @@ body
   display: block;
 }
 .orange-theme-font{
+  color:orangered;
+}
+.orange-theme-font-hover:hover{
   color:orangered;
 }
 .section-2 img{
@@ -29,6 +32,10 @@ body
    border-radius: 50%;
  }
 
+ /* .img-shadow
+ {
+  box-shadow: 3px 7px 5px 0px rgb(196, 193, 196);
+ } */
 .img-shadow:hover{
   box-shadow: 3px 7px 5px 0px rgb(196, 193, 196);
 }
