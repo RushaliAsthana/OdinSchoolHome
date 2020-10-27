@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href=styles.css>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mystyles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
     <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
@@ -15,9 +16,12 @@
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
     crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="mystyles.css">
 </head>
-<body>
+<body class="text-gray-700">
     <style>
+      @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
         body h1{
           font-family: 'Roboto Slab';
           font-weight: bold;
@@ -117,7 +121,6 @@
     
     
       <!--0th section-->
-    
       <nav class="flex sticky top-0 z-10 items-center bg-white p-3 flex-wrap blog-nav shadow">
         <a href="#" class="p-2 mr-4 inline-flex items-center">
           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="220.416" height="42.574" viewBox="0 0 220.416 42.574">
@@ -217,42 +220,44 @@
         >
         
       <div class="m-0 drop-btn">
-        <button class="px-4 py-2  rounded flex hover:text-orange-500 active:orange-theme-font" id="menu-btn">Programs   <svg class="fill-current h-4 w-4 mt-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg></button>
+        <button class="px-4 py-2  rounded flex orange-theme-font-hover active:orange-theme-font font-semibold" id="menu-btn">Programs   <svg class="fill-current h-4 w-4 mt-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg></button>
         
         <div class="bg-white lg:shadow hidden   lg:absolute rounded-xl  p-5 text-sm w-34" id="dropdown">
-            <a href="#" class="px-2 py-1 hover:bg-gray-100 hover:text-orange-500 rounded">Data Science</a><br><br>
-            <a href="#" class="px-2 py-1 hover:bg-gray-100 hover:text-orange-500 rounded">Full Stack Web Development</a>
+            <a href="#" class="px-2 py-1 hover:bg-gray-100 orange-theme-font-hover font-medium rounded">Data Science</a><br><br>
+            <a href="#" class="px-2 py-1 hover:bg-gray-100 orange-theme-font-hover font-medium rounded">Full Stack Web Development</a>
             
         </div>
     </div>
         <a
               href="#"
-              class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded  items-center justify-center  hover:text-orange-500 bg-white mr-3"
+              class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded  font-semibold items-center justify-center  orange-theme-font-hover bg-white mr-3"
             >
             <span> Admission</span>
             </a>
             <a
             href="#"
-            class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded  items-center justify-center  hover:text-orange-500 bg-white mr-3"
+            class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded font-semibold  items-center justify-center  orange-theme-font-hover bg-white mr-3"
           >
            Hire from OdinSchool</span>
           </a>
           <a
           href="#"
-          class="lg:inline-flex lg:w-auto w-full pl-4 pr-4 p-2 rounded-xl items-center justify-center  bg-blue-600 hover:bg-blue-700 transition ease-in-out duration-150 text-white mr-3"
+          class="lg:inline-flex lg:w-auto w-1/2 lg:w-full px-6 lg:ml-4 p-2 text-sm  rounded-xl orange-theme-bg-hover items-center justify-center  orange-theme-bg orange-theme-bg-hover transition ease-in-out duration-150 text-white mr-3"
+          style="letter-spacing: 1px;"
         >
          Apply Now  </span>
         </a>
         </div>
         </div>
       </nav>
-      <div class="bg-orange-200">
+      
+      <div class="bg-orange-100">
       <div class="w-3/4 mt-10 lg:ml-6 ml-4">
         <div>
-         <h1 class="text-4xl text-gray-800 lg:text-5xl">Successfull  Companies trust odinschool talent</h1><br>
+         <h1 class="text-3xl  lg:text-5xl">Successfull  Companies trust odinschool talent</h1><br>
          <p class="text-lg lg:text-2xl text-gray-900 ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p><br><br><br>
          
-         <button class="text-xl  rounded-xl bg-blue-500 p-3 w-3/4 lg:w-1/4  hover:shadow-xl hover:bg-blue-700 transition ease-in-out duration-200" type="button">Apply Now</button><br><br><bR><br><br>
+         <button onclick="openModal()" class=" text-lg rounded-xl orange-theme-bg p-4 lg:w-64 text-white orange-theme-bg-hover transition ease-in-out duration-200  " type="button">Partner Odinschool</button>
         </div>
 
         
@@ -260,7 +265,7 @@
     </div><br><br>
       <hr>
      
-      <div><h1 class="text-center text-4xl text-gray-800 lg:text-5xl p-6" style="font-family: 'Roboto Slab', serif;">Students Undergo an Intensive 6-month program </h1></div>
+      <div><h1 class="text-center text-3xl  lg:text-5xl p-6" style="font-family: 'Roboto Slab', serif;">Students Undergo an Intensive 6-month program </h1></div>
       <div class="grid grid-cols-4 gap-4 lg:ml-64 lg:mr-0 mr-10">
         <div class="lg:col-start-1 lg:col-span-6 col-span-11 ">
           <div class="grid grid-cols-">
@@ -278,11 +283,11 @@
 
                     }
               </style>
-              <p><i class=" bg-orange-500 lg:text-lg text-sm fa fa-check"></i>	&nbsp;600+ Hours of active engagement</p>                  
-              <p><span class="text-black "><i class="lg:text-lg text-sm bg-orange-500 fa fa-check"></i>	&nbsp;Multiple hands-on projects completed during the program</p>               
-              <p><span class="text-black "><i class="lg:text-lg text-sm bg-orange-500 fa fa-check"></i>	&nbsp;Prepared with hard and soft skills</p> 
-              <p><span class="text-black "><i class="lg:text-lg text-sm bg-orange-500 fa fa-check"></i>	&nbsp;Continuosly assessed every month</p>
-                <p><span class="text-black "><i class="lg:text-lg text-sm bg-orange-500 fa fa-check"></i>	&nbsp;Competetive,yet collaborative environment prepares for the real workplace</p>               
+              <p><i class=" orange-theme-bg lg:text-lg text-black text-sm fa fa-check"></i>	&nbsp;600+ Hours of active engagement</p>                  
+              <p><span class=" "><i class="lg:text-lg text-black text-sm orange-theme-bg fa fa-check"></i>	&nbsp;Multiple hands-on projects completed during the program</p>               
+              <p><span class=" "><i class="lg:text-lg text-black text-sm orange-theme-bg fa fa-check"></i>	&nbsp;Prepared with hard and soft skills</p> 
+              <p><span class=" "><i class="lg:text-lg  text-black text-sm orange-theme-bg fa fa-check"></i>	&nbsp;Continuosly assessed every month</p>
+                <p><span class=" "><i class="lg:text-lg text-sm text-black orange-theme-bg fa fa-check"></i>	&nbsp;Competetive,yet collaborative environment prepares for the real workplace</p>               
                             
                         
         </div>
@@ -291,40 +296,42 @@
       </div><br><br>
       <hr><br><br>
      
-      <h1 class="text-center text-4xl text-gray-800 lg:text-5xl">
+      <h1 class="text-center text-3xl  lg:text-5xl">
         Our students have aquired the skills that are most needed
    </h1><br><br>
    <div class="grid lg:grid-cols-2 grid:cols-2 lg:ml-64 lg:text-left text-center">
     <div>
-      <p class="lg:text-4xl text-3xl text-gray-800 font-semibold">Data Science</p><br>
-      <p class="lg:text-2xl text-xl text-gray-800 font-normal">Sql</p><br>
-      <p class="lg:text-2xl text-xl text-gray-800 font-normal">Python</p><br>
-      <p class="lg:text-2xl text-xl text-gray-800 font-normal">Statistics</p><br>
-      <p class="lg:text-2xl text-xl text-gray-800 font-normal">Linear Algebra</p><br>
-      <p class="lg:text-2xl text-xl text-gray-800 font-normal">Data Modeling</p><br>
-      <p class="lg:text-2xl text-xl text-gray-800 font-normal">Machine Learning</p><br>
-      <p class="lg:text-2xl text-xl text-gray-800 font-normal">Natural Language Programing</p><br>
-      <p class="lg:text-2xl text-xl text-gray-800 font-normal">Computer Vision</p><br>
+      <p class="lg:text-4xl text-2xl  font-semibold">Data Science</p><br>
+      <p class="lg:text-2xl text-lg font-normal">Sql</p><br>
+      <p class="lg:text-2xl text-lg font-normal">Python</p><br>
+      <p class="lg:text-2xl text-lg font-normal">Statistics</p><br>
+      <p class="lg:text-2xl text-lg font-normal">Linear Algebra</p><br>
+      <p class="lg:text-2xl text-lg font-normal">Data Modeling</p><br>
+      <p class="lg:text-2xl text-lg font-normal">Machine Learning</p><br>
+      <p class="lg:text-2xl text-lg font-normal">Natural Language Programing</p><br>
+      <p class="lg:text-2xl text-lg font-normal">Computer Vision</p><br>
     </div>
     <div>
-      <p class="lg:text-4xl text-3xl text-gray-800 font-semibold">Data Science</p><br>
-      <p class="lg:text-2xl text-xl text-gray-800 font-normal">Sql</p><br>
-      <p class="lg:text-2xl text-xl text-gray-800 font-normal">Python</p><br>
-      <p class="lg:text-2xl text-xl text-gray-800 font-normal">Statistics</p><br>
-      <p class="lg:text-2xl text-xl text-gray-800 font-normal">Linear Algebra</p><br>
-      <p class="lg:text-2xl text-xl text-gray-800 font-normal">Data Modeling</p><br>
-      <p class="lg:text-2xl text-xl text-gray-800 font-normal">Machine Learning</p><br>
-      <p class="lg:text-2xl text-xl text-gray-800 font-normal">Natural Language Programing</p><br>
-      <p class="lg:text-2xl text-xl text-gray-800 font-normal">Computer Vision</p><br>
+      <p class="lg:text-4xl text-2xl font-semibold">Full Stack Developer</p><br>
+      <p class="lg:text-2xl text-lg font-normal">Data Structures</p><br>
+      <p class="lg:text-2xl text-lg font-normal">Python</p><br>
+      <p class="lg:text-2xl text-lg font-normal">Angular</p><br>
+      <p class="lg:text-2xl text-lg font-normal">Mongo DB</p><br>
+      <p class="lg:text-2xl text-lg font-normal">React</p><br>
+      <p class="lg:text-2xl text-lg font-normal">Node Js</p><br>
+      <p class="lg:text-2xl text-lg font-normal">Programing with security</p>
+     
     </div>
    </div>
-   <br><br><br><hr><br><br>
+   <hr>
        
-        <section class="text-center bg-orange-500"><br><br><bR><br><br>
-            <h1 class="text-center text-white lg:text-6xl text-2xl">Ready for an exciting Data Science career?</h1>
-            <br><br><b><br>
-              <button class="text-xl rounded-xl bg-white p-3 w-3/4 lg:w-1/4  hover:shadow-xl hover:bg-orange-100 transition ease-in-out duration-200" type="button">Apply Now</button><br><br><bR><br><br>
-          </section>
+   <div class="orange-theme-bg">
+    <div class="p-10 lg:p-24 mt-20 text-center">
+      <h1 class="text-3xl lg:text-6xl mt-10 text-white" style="font-family: 'Roboto Slab', serif;">Ready to grow your carrer?</h1><br><br>
+      <button style="letter-spacing: 1px;" class="text-xl rounded-xl bg-white p-3 w-3/4 lg:w-1/4 font-semibold hover:shadow-xl  transition ease-in-out duration-200" type="button">Apply Now</button>
+    </div>
+  
+  </div>
           
           
           <!--11th section close-->
@@ -406,6 +413,160 @@
             </div>
             <div class="pt-4 mt-4 pt-6 text-gray-600 border-t border-gray-800 text-center"> © 2020 . All rights reserved.</div>
           </footer>
+          <style>
+            .animated {
+              -webkit-animation-duration: 1s;
+              animation-duration: 1s;
+              -webkit-animation-fill-mode: both;
+              animation-fill-mode: both;
+            }
+        
+            .animated.faster {
+              -webkit-animation-duration: 500ms;
+              animation-duration: 500ms;
+            }
+        
+            .fadeIn {
+              -webkit-animation-name: fadeIn;
+              animation-name: fadeIn;
+            }
+        
+            .fadeOut {
+              -webkit-animation-name: fadeOut;
+              animation-name: fadeOut;
+            }
+        
+            @keyframes fadeIn {
+              from {
+                opacity: 0;
+              }
+        
+              to {
+                opacity: 1;
+              }
+            }
+        
+            @keyframes fadeOut {
+              from {
+                opacity: 1;
+              }
+        
+              to {
+                opacity: 0;
+              }
+            }
+          </style>
+        
           
+        
+          <div class="main-modal fixed w-full h-100 inset-0 z-50 overflow-hidden flex justify-center items-center animated fadeIn faster"
+            style="background: rgba(0,0,0,.7);">
+            <div
+              class="border border-teal-500 shadow-lg modal-container bg-white w-11/12 md:max-w-md mx-auto rounded shadow-lg z-50 overflow-y-auto">
+              <div class="modal-content py-4 text-left px-6">
+                <!--Title-->
+                <div class="flex pb-3 text-right">
+                  <div class="modal-close cursor-pointer text-right">
+                    <svg class="fill-current text-black" xmlns="http://www.w3.org/2000/svg" width="18" height="18">
+                      <path
+                        d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z">
+                      </path>
+                    </svg>
+                  </div>
+                </div>
+           
+                
+                  <form class="w-full max-w-sm">
+                    <div class="md:flex md:items-center mb-6">
+                      <div class="md:w-1/3">
+                        <label class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4" for="inline-full-name">
+                          Full Name
+                        </label>
+                      </div>
+                      <div class="md:w-2/3">
+                        <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" id="inline-full-name" type="text" placeholder="Enter your full Name">
+                      </div>
+                    </div>
+                    <div class="md:flex md:items-center mb-6">
+                      <div class="md:w-1/3">
+                        <label class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4" >
+                          Email
+                        </label>
+                      </div>
+                      <div class="md:w-2/3">
+                        <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" id="inline-password"  placeholder="abc@abc.com">
+                      </div>
+                    </div>
+                    <div class="md:flex md:items-center mb-6">
+                      <div class="md:w-1/3">
+                        <label class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4" for="inline-full-name">
+                          Phone No.
+                        </label>
+                      </div>
+                      <div class="md:w-2/3">
+                        <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" id="inline-full-name" type="text" placeholder="Enter the 10 digit number">
+                      </div>
+                    </div>
+                    <div class="md:flex md:items-center mb-6">
+                      <div class="md:w-1/3">
+                        <label class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4" for="inline-full-name">
+                          Company Name
+                        </label>
+                      </div>
+                      <div class="md:w-2/3">
+                        <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" id="inline-full-name" type="text">
+                      </div>
+                    </div>
+
+                    
+                    <div class="md:flex md:items-center">
+                      <div class="md:w-1/3"></div>
+                      <div class="md:w-2/3">
+                        <button class="shadow orange-theme-bg focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" type="button">
+                          Submit
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+                  
+                  
+                </div>
+                <!--Body-->
+                
+              </div>
+            </div>
+          </div>
+        
+          <script>
+            const modal = document.querySelector('.main-modal');
+            const closeButton = document.querySelectorAll('.modal-close');
+        
+            const modalClose = () => {
+              modal.classList.remove('fadeIn');
+              modal.classList.add('fadeOut');
+              setTimeout(() => {
+                modal.style.display = 'none';
+              }, 500);
+            }
+        
+            const openModal = () => {
+              modal.classList.remove('fadeOut');
+              modal.classList.add('fadeIn');
+              modal.style.display = 'flex';
+            }
+        
+            for (let i = 0; i < closeButton.length; i++) {
+        
+              const elements = closeButton[i];
+        
+              elements.onclick = (e) => modalClose();
+        
+              modal.style.display = 'none';
+        
+              window.onclick = function (event) {
+                if (event.target == modal) modalClose();
+              }
+            }
+          </script>
 </body>
 </html>
