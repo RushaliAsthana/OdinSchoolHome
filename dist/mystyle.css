@@ -110,39 +110,22 @@ body
   background-image: -webkit-radial-gradient(center top, circle farthest-side, #FF0000 0%, #990000 100%);
   /* W3C Markup, IE10 Release Preview */ 
   background-image: radial-gradient(circle farthest-side at center top, #FF0000 0%, #990000 100%);
-  width: 5em;
+  width: 2.5em;
   height: 7em;
   z-index: 0;
   position: absolute  ;
   margin-top: auto;
+  margin-left: 15px;
+  margin-top: -5px;
   /* margin-right: auto; */
   font-family: 'Kite One', sans-serif;
+  box-shadow: 3px 2px 7px 0px rgb(80, 80, 80);
+  
 }
 
 
-.ribbon i{
-  width: 90%;
-  height: 120%;
-  display: block;
-  margin: auto;
-  z-index: 100;
-  position: relative;
- 
-  overflow: hidden;
-}
-i span{
-  color: #FFF;
-  display: block;
-  text-align: center;
-  top: 50%;
-  margin-top: -2em;
-  -webkit-transform: rotate(-90deg);
-  -moz-transform: rotate(-90deg);
-  position: relative;
-  text-shadow: 0.0625em 0.0625em 0.0625em #333;
-  font-style: normal;
-  font-weight: bold;
-}
+
+
 .ribbon:before{
   content: "";
   position: absolute;
@@ -152,6 +135,8 @@ i span{
     height: 0;
     border-top: 2.5em solid #990000;
     border-right: 2.5em solid transparent;
+    
+    
 }
 .ribbon:after{
   content: "";
@@ -162,6 +147,8 @@ i span{
     height: 0;
     border-top: 2.5em solid #990000;
     border-left: 2.5em solid transparent;
+    /* box-shadow: 3px 0px 5px 0px rgba(0,0,0,0.35); */
+    /* z-index: 100; */
 }
 @media (max-width:780px)
 {
