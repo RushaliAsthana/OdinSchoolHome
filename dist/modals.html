@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Document</title>
+ <link rel="stylesheet" href="styles.css">
+ <link rel="stylesheet" href="mystyle.css">
+ <script
+ src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+ integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+ crossorigin="anonymous"
+ ></script>
+<script src="scripts.js"></script>
+  
+</head>
+<body>
+<div class="p-10 lg:p-20 odin-talk-card ">
+ <div class="grid grid-cols-1 lg:grid-cols-3 gap-5 lg:gap-10 ">
+  <div  >
+   <img class="w-full lg:w-3/4 rounded-2xl hover-shadow cursor"  src="https://images.unsplash.com/photo-1494548162494-384bba4ab999?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" onclick="openModal();currentSlide(1)" >
+  </div>
+  <div >
+   <img class="w-full lg:w-3/4 rounded-2xl hover-shadow cursor" src="https://static.toiimg.com/photo/72975551.cms"  onclick="openModal();currentSlide(2)" >
+  </div>
+  <div >
+   <img class="w-full lg:w-3/4 rounded-2xl hover-shadow cursor" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR03eqf91-3cfMs1EroeOdEaE8YzAv9tzgKBg&usqp=CAU"  onclick="openModal();currentSlide(3)" >
+  </div>
+ </div>
+
+ 
+<div id="myModal" class="modal">
+ <span class="close cursor" onclick="closeModal()">&times;</span>
+ <div class="modal-content">
+
+   <div class="mySlides ">
+    
+    <iframe  src="https://www.youtube.com/embed/668nUCeBHyY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   </div>
+
+   <div class="mySlides">
+    <iframe  src="https://www.youtube.com/embed/a3ICNMQW7Ok" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   </div>
+
+   <div class="mySlides">
+    <iframe  src="https://www.youtube.com/embed/0FX74n7YWok" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   </div>
+   
+   
+
+   <div class="caption-container">
+     <p id="caption"></p>
+   </div>
+
+
+ 
+ </div>
+</div>
+</div>
+</body>
+</html>
