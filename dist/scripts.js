@@ -9,6 +9,11 @@ $(document).ready(function () {
  });
 });
 
+$(document).keyup(function(e) {
+  if (e.key === "Escape") { // escape key maps to keycode `27`
+    closeModal();
+ }
+});
 
 function openModal() {
   document.getElementById("myModal").style.display = "block";
